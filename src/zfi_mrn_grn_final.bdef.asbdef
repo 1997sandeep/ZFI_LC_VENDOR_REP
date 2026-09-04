@@ -1,0 +1,37 @@
+unmanaged implementation in class zbp_fi_mrn_grn_final unique;
+strict ( 2 );
+
+define behavior for ZFI_MRN_GRN_FINAL //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) PONumber, CompanyCode;
+
+  mapping for zfi_mrn_grn
+  {
+    PONumber       = po_number;
+    CompanyCode    = company_code;
+
+    DocumentNumber = document_number;
+    VoucherNo      = voucher_no;
+    VoucherDate    = voucher_date;
+    Vendor         = vendor;
+    SupplierName   = supplier_name;
+    JobID          = job_id;
+    Currency       = currency;
+    BasicAmount    = basic_amount;
+    IGST           = igst;
+    CGST           = cgst;
+    SGST           = sgst;
+    TDS            = tds;
+
+    TotalAmount    = total_amount;
+    LCReference    = lc_reference;
+    BOEReference   = boe_reference;
+  }
+}

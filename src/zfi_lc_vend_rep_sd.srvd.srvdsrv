@@ -1,0 +1,9 @@
+@EndUserText.label: 'Service Definition - LC Vendor Monitoring Report'
+define service ZFI_LC_VEND_REP_SD {
+  expose ZFI_MRN_GRN_FINAL         as MrnGrn;
+  expose ZFI_BOE_OUTSTANDING_FINAL as BOE;
+  expose ZFI_LC_SUMMARY_FINAL      as LCSummary;
+  expose ZFI_COMPCODE_F4           as CompCodeF4;
+  expose ZFI_SUPPLIER_F4           as SupplierF4;
+  expose ZFI_BOE_REFERENCE_F4      as BOERefF4;
+}

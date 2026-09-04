@@ -1,0 +1,5 @@
+CLASS zbp_fi_mrn_grn_final DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zfi_mrn_grn_final.
+ENDCLASS.
+
+CLASS zbp_fi_mrn_grn_final IMPLEMENTATION.
+ENDCLASS.
